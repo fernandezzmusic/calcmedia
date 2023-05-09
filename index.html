@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Notas de Provas</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap5/css/bootstrap.min.css">
+	<script type="text/javascript" src="scripts.js"></script>
+</head>
+
+
+<body class= "mt-5">
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-6">
+				<h1>Calcule sua média</h1>
+				<form>
+					<label for="nota1">Nota da primeira prova:</label>
+					<input type="number" id="nota1" name="nota1" min="0" max="10" required><br><br>
+					<label for="nota2">Nota da segunda prova:</label>
+					<input type="number" id="nota2" name="nota2" min="0" max="10" required><br><br>
+					<input type="button" id = "btnCadastrar" value="Calcular Média" onclick="calcularMedia()">
+				</form>
+				<p id="resultado"></p>
+			</div>
+			<div class = "col-md-6">
+				<p class = "p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3" id="notas"></p>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+</html>
